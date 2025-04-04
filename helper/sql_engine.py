@@ -7,7 +7,7 @@ def get_engine():
 
     host = '127.0.0.1'
     port = '3306'
-    bd = "alzheimer"
+    db = "alzheimer"
 
     # Create an engine to connect to MySQL
-    return create_engine(f'mysql+pymysql://{username}:{password}@{host}:{port}')
+    return create_engine(f'mysql+pymysql://{username}:{password}@{host}:{port}/{db}')
